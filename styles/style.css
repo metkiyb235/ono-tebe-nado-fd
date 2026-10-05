@@ -1,1 +1,304 @@
 /* место для вашего кода */
+h4,
+h3,
+h2,
+h1{
+ text-transform: uppercase;
+} 
+
+body{
+    width: 1100px;
+}
+
+.header{
+    width: 1100px;
+    display: grid;
+    padding:  92px 50px 96px 50px;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+
+.menu{
+    align-items: center;
+}
+
+
+
+ul{
+display: flex;
+list-style-type:  circle;
+list-style-position: inside;
+}
+
+ul li{
+margin-right: 7px; 
+font-size: 18px;
+flex-wrap: nowrap;
+ white-space: nowrap;
+  text-decoration: underline;
+}
+
+ul .main{
+    list-style-type:none ;
+    text-decoration:none;
+}
+
+
+
+.logo{
+    height: 105px;
+    width: 130px;
+    margin-left: 40px;
+}
+
+.contacts{
+    display: flex;
+    align-items: center;
+    justify-self: end;
+    flex-wrap: wrap;
+    gap: 0 40px;
+    height: 98px;
+    width: 240px;
+    font-size: 18px;
+    }
+
+.contacts p{
+    margin: 0; 
+    
+}
+
+.mainContacts{
+    text-decoration: underline;
+}
+ 
+/*Кончился блок header*/
+
+.cover{
+    display: grid;
+    height:757px;
+    width: 1100px;
+    position: relative;
+    padding: 50px;
+    margin-bottom: 180px;
+}
+
+.flowers{
+height: 100%;
+z-index: 1;
+position: absolute;
+ filter: brightness(0.4);
+}
+
+ .cover h1,
+ .cover p,
+ .cover button{
+    z-index: 1;
+    position: relative;
+    color:#fff;
+    background-color: transparent;
+    text-transform: uppercase;
+ }
+
+h1 .one{
+    grid-area: one;
+    transform: translateY(20px);
+}
+
+h1 .two{
+    grid-area: two;
+    align-self:end;
+    margin-top: 10px;
+    transform: translatex(15px);        
+}
+
+h1 .three{
+    grid-area: three;
+    transform: translateX(-71px);
+    align-self: end;
+}
+
+ .cover h1{
+    display: grid;
+    grid-template-columns:  repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "one . ."
+    ". two ."
+    ". . three"
+    ;
+    letter-spacing: 0.3em;
+    transform: translateY(-75px);
+ }
+
+ .heading{
+    display: grid;
+    width: 1000px;
+    padding-top:165px ;
+ }
+
+ .heading h1{
+    font-size: 100px;
+ }
+
+  
+
+ .lowerElements{
+    display: flex;
+ }
+
+ .cover p{
+align-self: end;
+font-size: 22px;
+word-spacing: 82%;
+padding-bottom: 11px;
+ }
+
+ button{ 
+  border: 1px solid #fff; 
+  align-self: end;
+  margin-left: auto;
+  height: 51px;
+  width: 256px;
+  font-size: 22px;
+  word-spacing: 15%;
+  letter-spacing: 0;
+}
+
+/*Кончилась секция cover*/
+
+.lots{
+    display: grid;
+    margin: 24px 24px 120px 24px;
+    height: 723px;
+}
+.lotsCard{
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+.imgLots{
+    height: 596px;
+    width: 334px;
+    filter: brightness(0.4);
+    position: absolute; 
+       
+}
+
+.lots h2{
+    margin-left: 40px;
+    font-size:40px; 
+}
+
+.lots p,
+.lots h3{
+    color: #fff;
+    position: relative;
+    margin: 40px;
+   
+}
+
+.lotsInternal{
+    display: flex;
+    flex-direction:column;
+}
+
+.lotsInternal p{
+    font-size: 20px;
+    margin-top: auto;
+    transform: translateY(-21px);
+}
+
+.lotsInternal h3{
+    font-size: 22px;
+     text-decoration: underline;
+     padding-top: 16px;
+}
+
+.lots h4{
+    font-size: 20px;
+    font-weight: normal;
+    margin-left: 42px ;
+    text-transform: lowercase;
+     text-decoration: underline;
+     align-self: end;
+}
+
+
+/*Кончилась секция карточек*/
+
+.about{
+    display: grid;
+    padding: 32px 80px 24px 24px;
+    grid-template-columns: 1fr 2fr ;
+    height: 595px;
+    margin-bottom: 151px;
+}
+
+    .backsideImg{
+        position: relative;
+        background-color: black;
+        height: 240px;
+        width: 240px;
+        border-radius: 180px;
+        padding: 64px 46px 62px;
+        margin-left:46px ;
+    }
+
+    .backsideImg img{
+    position: relative;
+    width: 148px;
+    height: 114px;
+    }
+
+    .textAbout{
+        padding-top:122px; 
+        display: grid;
+        align-content: start; 
+        row-gap: 24px; 
+        margin-left:75px;
+        
+    }
+
+     .textAbout h4 {
+        font-size:40px; 
+        transform: translateY(-21px);
+        margin-bottom: 55px;
+    }
+
+    .textAbout p{
+        display: flex;
+        font-size:20px;
+        width: 693px;
+         word-spacing: 0px;
+    }
+
+/*Кончается секция about*/
+
+footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 26px;
+}
+
+footer .contacts{
+    margin-right: 85px;
+}
+
+footer p{
+    justify-self: center;
+    font-size: 18px;
+}
+
+footer .socials{
+   display: flex;
+   justify-content: end;
+   margin-right: 25px;
+   gap:48px;
+}
+
+.socials img{
+    width: 48px;
+    height: 48px;
+}
