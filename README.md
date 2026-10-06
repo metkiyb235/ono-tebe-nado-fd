@@ -1,5 +1,6 @@
 # "Оно тебе надо" — Auction Landing Page
 https://github.com/metkiyb235/ono-tebe-nado-fd
+
 A single-page website for a fictional auction of "things nobody believed in."
 Built with pure HTML and CSS as a layout practice project.
 
@@ -54,4 +55,8 @@ Built with pure HTML and CSS as a layout practice project.
 - A few spots rely on `transform: translate(...)` for fine positioning, which
   is brittle; a cleaner grid/flex approach would be better in production.
 - Some paddings/margins are hardcoded to match the mockup rather than driven
+<<<<<<< HEAD
   by design tokens.
+=======
+  by design tokens.
+>>>>>>> 8b85d27 (hot fix html)
