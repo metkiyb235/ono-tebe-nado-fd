@@ -1,167 +1,157 @@
 h4,
 h3,
 h2,
-h1{
- text-transform: uppercase;
-} 
-
-body{
-    width: 1100px;
-    margin: 0 auto;
-    background-color:#fff;
+h1 {
+  text-transform: uppercase;
 }
 
-.header{
-    width: 1100px;
-    display: grid;
-    padding:  92px 50px 90px 50px;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
+body {
+  width: 1100px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.header {
+  width: 1100px;
+  display: grid;
+  padding: 92px 50px 90px 50px;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
 }
 
 .header address {
-  align-self: start;  
+  align-self: start;
   margin-top: 8px;
 }
 
-ul{
-display: flex;
-list-style-type:  circle;
-list-style-position: inside;
+ul {
+  display: flex;
+  list-style-type: circle;
+  list-style-position: inside;
 }
 
-ul li{
-margin-right: 7px; 
-font-size: 18px;
-flex-wrap: nowrap;
-white-space: nowrap;
-text-decoration: underline;
+ul li {
+  margin-right: 7px;
+  font-size: 18px;
+
+  white-space: nowrap;
+  text-decoration: underline;
 }
 
 .menu li.main {
-    list-style-type: none;  
+  list-style-type: none;
 }
 
 .menu li a {
-    text-decoration: none;   
-}
-.main {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-.logo{
-    height: 105px;
-    width: 130px;
-    margin:7px 0 0 40px;
+
+.logo {
+  height: 105px;
+  width: 130px;
+  margin: 7px 0 0 40px;
 }
 
-address{
-    display: flex;
-    font-style: normal;
-    align-items: center;
-    justify-self: end;
-    flex-wrap: wrap;
-    width: 240px;
-    font-size: 18px;
-    text-transform: none;
-    }
-
-.main_contacts{
-    text-decoration:none;
+address {
+  display: flex;
+  font-style: normal;
+  align-items: center;
+  justify-self: end;
+  flex-wrap: wrap;
+  width: 240px;
+  font-size: 18px;
+  text-transform: none;
 }
- 
+
+.main_contacts {
+  text-decoration: none;
+}
+
 /*Кончился блок header*/
 
-.cover{
-    background-image: 
-    linear-gradient(rgba(0,0,0,0.4)),
-    url("../images/cover.jpg");
-    display: grid;
-    min-height:757px;
-    width: 1100px;
-    position: relative;
-    padding: 50px;
-    margin-bottom: 180px;
-    overflow: hidden;
+.cover {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4)), url("../images/cover.jpg");
+  display: grid;
+  min-height: 757px;
+  width: 1100px;
+  position: relative;
+  padding: 50px;
+  margin-bottom: 180px;
+  overflow: hidden;
 }
 
+.cover h1,
+.cover p,
+.cover button {
+  z-index: 1;
+  position: relative;
+  color: #fff;
+  background-color: transparent;
+  text-transform: uppercase;
+}
 
-
- .cover h1,
- .cover p,
- .cover button{
-    z-index: 1;
-    position: relative;
-    color:#fff;
-    background-color: transparent;
-    text-transform: uppercase;
- }
-
-  .cover h1{
-    display: grid;
-    grid-template-columns:  repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: 
+.cover h1 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
     "one . ."
     ". two ."
-    ". . three"
-    ;
-    letter-spacing: 0.3em;
-    height: 386px;  
-    margin-top: 22px;
- }
+    ". . three";
+  letter-spacing: 0.3em;
+  margin-top: 22px;
+}
 
-h1 .one{
-    grid-area: one;
-    align-self: start;      
+h1 .one {
+  grid-area: one;
+  align-self: start;
   justify-self: start;
 }
 
-
-
-h1 .two{
-    grid-area: two;
-    align-self:end;
-    transform: translatex(14px);
+h1 .two {
+  grid-area: two;
+  align-self: start;
+  justify-self: start;
 }
 
-h1 .three{
-    grid-area: three;
-    transform: translateX(-71px);
-    align-self: end;
+h1 .three {
+  grid-area: three;
+  justify-self: start;
+  align-self: start;
+  position: relative;
+  top: -9px;
+  left: -55px;
 }
 
+.heading {
+  display: grid;
+  width: 1000px;
+  padding-top: 90px;
+  position: relative;
+  z-index: 1;
+}
 
+.heading h1 {
+  font-size: 100px;
+}
 
- .heading{
-    display: grid;
-    width: 1000px;
-    padding-top:90px ;
-    position: relative;
-    z-index: 1;
- }
+.lowerElements {
+  display: flex;
+  position: relative;
+  z-index: 1;
+}
 
- .heading h1{
-    font-size: 100px;
- }
+.cover p {
+  align-self: end;
+  font-size: 22px;
+  word-spacing: 82%;
+  padding-bottom: 11px;
+}
 
-  
-
- .lowerElements{
-    display: flex;
-    position: relative;
-    z-index: 1;
- }
-
- .cover p{
-align-self: end;
-font-size: 22px;
-word-spacing: 82%;
-padding-bottom: 11px;
- }
-
- button{ 
-  border: 1px solid #fff; 
+button {
+  border: 1px solid #fff;
   align-self: end;
   margin-left: auto;
   height: 51px;
@@ -173,163 +163,139 @@ padding-bottom: 11px;
 
 /*Кончилась секция cover*/
 
-.lots{
-    display: grid;
-    margin: 24px 24px 125px 24px;
+.lots {
+  display: grid;
+  margin: 24px 24px 125px 24px;
 }
-.lotsCard{
-    display: grid;
-    gap: 25px;
-    margin-bottom: 30px;
-    grid-template-columns: repeat(3, 1fr);
+.lotsCard {
+  display: grid;
+  gap: 25px;
+  margin-bottom: 30px;
+  grid-template-columns: repeat(3, 1fr);
 }
 
-.lots h2{
-    margin: 0  0 25px 40px;
-    font-size:40px; 
-   
+.lots h2 {
+  margin: 0 0 25px 40px;
+  font-size: 40px;
 }
 
 .lots p,
-.lots h3{
-    color: #fff;
-    position: relative;
-    margin: 40px;
+.lots h3 {
+  color: #fff;
 }
 
-.lotsInternal{
-    height: 100%;
+.card {
+  padding: 50px 40px 48px 40px;
+  display: flex;
+  flex-direction: column;
+  min-height: 596px;
+  background-size: cover;
+  background-position: center;
 }
 
-.lotsInternal_one,
-.lotsInternal_two,
-.lotsInternal_three{
-    display: flex;
-    flex-direction: column;
-    height: 596px;
+.card_type_film {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4)), url("../images/card-lot-01.jpg");
 }
 
-.lotsInternal_one{
-   
-    background-size: cover;
-    background-position: center;
-    background-image: 
-    linear-gradient(rgba(0,0,0,0.4)),
-    url("../images/card-lot-01.jpg");
+.card_type_book {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4)), url("../images/card-lot-02.jpg");
 }
 
-.lotsInternal_two{
-    
-    background-size: cover;
-    background-position: center;
-    background-image: 
-    linear-gradient(rgba(0,0,0,0.4)),
-    url("../images/card-lot-02.jpg");
+.card_type_picture {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4)), url("../images/card-lot-03.jpg");
 }
 
-.lotsInternal_three{
-    
-    background-size: cover;
-    background-position: center;
-    background-image: 
-    linear-gradient(rgba(0,0,0,0.4)),
-    url("../images/card-lot-03.jpg");
+.lots_internal p {
+  font-size: 20px;
+  margin-top: auto;
+  margin-bottom: 0;
 }
 
-.lotsInternal p{
-    font-size: 20px;
-   margin-top: auto;
-   margin-bottom: 48px;
+.lots_internal h3 {
+  font-size: 22px;
+  text-decoration: underline;
 }
 
-.lotsInternal h3{
-    font-size: 22px;
-     text-decoration: underline;
-     padding-top: 10px;
+.lots_more {
+  font-size: 20px;
+  font-weight: normal;
+  margin-left: 38px;
+  text-transform: lowercase;
+  text-decoration: underline;
 }
-
-.lots h4{
-    font-size: 20px;
-    font-weight: normal;
-    margin-left: 38px ;
-    text-transform: lowercase;
-    text-decoration: underline;
-}
-
 
 /*Кончилась секция карточек*/
 
-.about{
-    display: grid;
-    padding: 32px 80px 24px 24px;
-    grid-template-columns: 1fr 2fr ;
-    margin-bottom: 134px;
+.about {
+  display: grid;
+  padding: 32px 80px 24px 24px;
+  grid-template-columns: 1fr 2fr;
+  margin-bottom: 132px;
 }
 
-    .backsideImg{
-        position: relative;
-        background-color: black;
-        height: 240px;
-        width: 240px;
-        border-radius: 50%;
-        padding: 64px 46px 62px;
-        margin-left:46px ;
-    }
+.backsideImg {
+  position: relative;
+  background-color: black;
+  height: 240px;
+  width: 240px;
+  border-radius: 50%;
+  padding: 64px 46px 62px;
+  margin-left: 46px;
+}
 
-    .backsideImg img{
-    position: relative;
-    width: 148px;
-    height: 114px;
-    }
+.backsideImg img {
+  position: relative;
+  width: 148px;
+  height: 114px;
+}
 
-    .textAbout{
-        padding-top:102px; 
-        display: grid;
-        align-content: start; 
-        row-gap: 24px; 
-        margin-left:72px;
-        
-    }
+.textAbout {
+  padding-top: 102px;
+  display: grid;
+  align-content: start;
+  row-gap: 24px;
+  margin-left: 72px;
+}
 
-     .textAbout h2 {
-        font-size:40px; 
-        margin-bottom: 72px;
-    }
+.textAbout h2 {
+  font-size: 40px;
+  margin-bottom: 72px;
+}
 
-    .textAbout p{
-        
-        font-size:20px;
-        width: 693px;
-     word-spacing: 0px;
-    }
+.textAbout p {
+  font-size: 20px;
+  width: 693px;
+  word-spacing: 0px;
+}
 
 /*Кончается секция about*/
 
-footer{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 26px;
+footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 26px;
 }
 
-footer address{
-    margin-right: 85px;
+footer address {
+  margin-right: 85px;
 }
 
-
-
-footer p{
-    justify-self: center;
-    font-size: 18px;
+footer p {
+  justify-self: center;
+  font-size: 18px;
 }
 
-footer .socials{
-   display: flex;
-   justify-content: end;
-   margin-right: 25px;
-   gap:48px;
+footer .socials {
+  display: flex;
+  justify-content: end;
+  margin-right: 25px;
+  gap: 48px;
 }
 
-.socials img{
-    width: 48px;
-    height: 48px;
+.socials img {
+  width: 48px;
+  height: 48px;
 }
