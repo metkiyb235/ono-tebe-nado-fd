@@ -1,4 +1,3 @@
-/* место для вашего кода */
 h4,
 h3,
 h2,
@@ -15,16 +14,15 @@ body{
 .header{
     width: 1100px;
     display: grid;
-    padding:  92px 50px 96px 50px;
+    padding:  92px 50px 90px 50px;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
 }
 
-.menu{
-    align-items: center;
+.header address {
+  align-self: start;  
+  margin-top: 8px;
 }
-
-
 
 ul{
 display: flex;
@@ -36,48 +34,50 @@ ul li{
 margin-right: 7px; 
 font-size: 18px;
 flex-wrap: nowrap;
- white-space: nowrap;
-  text-decoration: underline;
+white-space: nowrap;
+text-decoration: underline;
 }
 
-ul .main{
-    list-style-type:none ;
-    text-decoration:none;
+.menu li.main {
+    list-style-type: none;  
 }
 
-
+.menu li a {
+    text-decoration: none;   
+}
+.main {
+    text-decoration: none;
+}
 
 .logo{
     height: 105px;
     width: 130px;
-    margin-left: 40px;
+    margin:7px 0 0 40px;
 }
 
-.contacts{
+address{
     display: flex;
+    font-style: normal;
     align-items: center;
     justify-self: end;
     flex-wrap: wrap;
-    gap: 0 40px;
-    height: 98px;
     width: 240px;
     font-size: 18px;
+    text-transform: none;
     }
 
-.contacts p{
-    margin: 0; 
-    
-}
-
-.mainContacts{
-    text-decoration: underline;
+.main_contacts{
+    text-decoration:none;
 }
  
 /*Кончился блок header*/
 
 .cover{
+    background-image: 
+    linear-gradient(rgba(0,0,0,0.4)),
+    url("../images/cover.jpg");
     display: grid;
-    height:757px;
+    min-height:757px;
     width: 1100px;
     position: relative;
     padding: 50px;
@@ -85,13 +85,7 @@ ul .main{
     overflow: hidden;
 }
 
-.flowers{
-width: 100%;
-height: 100%;
-z-index: 0;
-position: absolute;
- filter: brightness(0.4);
-}
+
 
  .cover h1,
  .cover p,
@@ -103,25 +97,7 @@ position: absolute;
     text-transform: uppercase;
  }
 
-h1 .one{
-    grid-area: one;
-    transform: translateY(20px);
-}
-
-h1 .two{
-    grid-area: two;
-    align-self:end;
-    margin-top: 10px;
-    transform: translatex(15px);        
-}
-
-h1 .three{
-    grid-area: three;
-    transform: translateX(-71px);
-    align-self: end;
-}
-
- .cover h1{
+  .cover h1{
     display: grid;
     grid-template-columns:  repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -131,13 +107,36 @@ h1 .three{
     ". . three"
     ;
     letter-spacing: 0.3em;
-    transform: translateY(-75px);
+    height: 386px;  
+    margin-top: 22px;
  }
+
+h1 .one{
+    grid-area: one;
+    align-self: start;      
+  justify-self: start;
+}
+
+
+
+h1 .two{
+    grid-area: two;
+    align-self:end;
+    transform: translatex(14px);
+}
+
+h1 .three{
+    grid-area: three;
+    transform: translateX(-71px);
+    align-self: end;
+}
+
+
 
  .heading{
     display: grid;
     width: 1000px;
-    padding-top:165px ;
+    padding-top:90px ;
     position: relative;
     z-index: 1;
  }
@@ -176,27 +175,19 @@ padding-bottom: 11px;
 
 .lots{
     display: grid;
-    margin: 24px 24px 120px 24px;
-    height: 723px;
+    margin: 24px 24px 125px 24px;
 }
 .lotsCard{
     display: grid;
     gap: 25px;
+    margin-bottom: 30px;
     grid-template-columns: repeat(3, 1fr);
 }
 
-
-.imgLots{
-    height: 596px;
-    width: 334px;
-    filter: brightness(0.4);
-    position: absolute; 
-       
-}
-
 .lots h2{
-    margin-left: 40px;
+    margin: 0  0 25px 40px;
     font-size:40px; 
+   
 }
 
 .lots p,
@@ -204,33 +195,65 @@ padding-bottom: 11px;
     color: #fff;
     position: relative;
     margin: 40px;
-   
 }
 
 .lotsInternal{
+    height: 100%;
+}
+
+.lotsInternal_one,
+.lotsInternal_two,
+.lotsInternal_three{
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
+    height: 596px;
+}
+
+.lotsInternal_one{
+   
+    background-size: cover;
+    background-position: center;
+    background-image: 
+    linear-gradient(rgba(0,0,0,0.4)),
+    url("../images/card-lot-01.jpg");
+}
+
+.lotsInternal_two{
+    
+    background-size: cover;
+    background-position: center;
+    background-image: 
+    linear-gradient(rgba(0,0,0,0.4)),
+    url("../images/card-lot-02.jpg");
+}
+
+.lotsInternal_three{
+    
+    background-size: cover;
+    background-position: center;
+    background-image: 
+    linear-gradient(rgba(0,0,0,0.4)),
+    url("../images/card-lot-03.jpg");
 }
 
 .lotsInternal p{
     font-size: 20px;
-    margin-top: auto;
-    transform: translateY(-21px);
+   margin-top: auto;
+   margin-bottom: 48px;
 }
 
 .lotsInternal h3{
     font-size: 22px;
      text-decoration: underline;
-     padding-top: 16px;
+     padding-top: 10px;
 }
 
 .lots h4{
     font-size: 20px;
     font-weight: normal;
-    margin-left: 42px ;
+    margin-left: 38px ;
     text-transform: lowercase;
-     text-decoration: underline;
-     align-self: end;
+    text-decoration: underline;
 }
 
 
@@ -240,8 +263,7 @@ padding-bottom: 11px;
     display: grid;
     padding: 32px 80px 24px 24px;
     grid-template-columns: 1fr 2fr ;
-    height: 595px;
-    margin-bottom: 151px;
+    margin-bottom: 134px;
 }
 
     .backsideImg{
@@ -261,22 +283,21 @@ padding-bottom: 11px;
     }
 
     .textAbout{
-        padding-top:122px; 
+        padding-top:102px; 
         display: grid;
         align-content: start; 
         row-gap: 24px; 
-        margin-left:75px;
+        margin-left:72px;
         
     }
 
-     .textAbout h4 {
+     .textAbout h2 {
         font-size:40px; 
-        transform: translateY(-21px);
-        margin-bottom: 55px;
+        margin-bottom: 72px;
     }
 
     .textAbout p{
-        display: flex;
+        
         font-size:20px;
         width: 693px;
      word-spacing: 0px;
@@ -290,9 +311,11 @@ footer{
     padding: 26px;
 }
 
-footer .contacts{
+footer address{
     margin-right: 85px;
 }
+
+
 
 footer p{
     justify-self: center;
